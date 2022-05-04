@@ -1,0 +1,149 @@
+body{
+  background-color:#000000;
+     color: rgb(252, 252, 252); 
+     font-family: 'Abel', sans-serif;  
+     font-size: 14px; 
+     font-weight:normal;
+     margin: 0;
+}
+
+@keyframes seq-preloader {
+  50% {
+    opacity: 1;
+  }
+  
+  100% {
+    opacity: 0;
+  }
+}
+
+.seq-preloader {
+  background: black;
+  visibility: visible;
+  opacity: 1;
+  position: absolute;
+  z-index: 9999;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.seq-preloader.seq-preloaded {
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0s .5s, opacity .5s;
+}
+
+.seq-preload-indicator {
+  overflow: visible;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.seq-preload-circle {
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  fill: white;
+  opacity: 0;
+  animation: seq-preloader 1.25s infinite;
+}
+
+.seq-preload-circle-2 {
+  animation-delay: .15s;
+}
+
+.seq-preload-circle-3 {
+  animation-delay: .3s;
+}
+
+.seq-preload-indicator-fallback {
+  width: 42px;
+  overflow: visible;
+}
+
+.seq-preload-indicator-fallback .seq-preload-circle {
+  width: 8px;
+  height:8px;
+  background-color: #7a7a7a;
+  border-radius: 100%;
+  opacity: 1;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.seq-preload-indicator-fallback .seq-preload-circle-2 {
+  margin-left: 3px;
+  margin-right: 3px;
+  width: 12px;
+  height: 12px;
+}
+
+.seq-preload-indicator-fallback .seq-preload-circle-3 {
+  width: 16px;
+  height: 16px;
+}
+
+
+.container1{
+  background-color: ghostwhite;
+}
+.tm-content-box{
+  border: 1px solid slategrey;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 6px;
+  background-image: url("Edited.PNG");
+}
+.article-row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.article-row2 {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+.article-row3 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.tm-content-box #infom{
+  background-color: dimgrey;
+  border-radius: 6px;
+  text-align: center;
+  display: block;
+}
+.tm-content-box h2{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.tm-content-box h6{
+  right: 0px;
+  font-family: cursive;
+  font-weight: bold;
+}
+.tm-content-box p{
+  font-family: 'Courier New', Courier, monospace;
+}
+.colcredits {
+    display: table-cell;
+    float:left;
+    margin:auto;
+    width:100%;
+    text-align:center;
+}
+#credits {
+    display:table;
+    width:100%;
+    text-align:left;
+    font-size:12px;
+    color:#999;
+    line-height:100%;
+}
