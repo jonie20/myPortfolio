@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image gallery</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet"  href="jquery.flipster.min.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="carousel">
+            <ul>
+               <li><img src="photo1.png" alt="img1"></li>
+               <li><img src="photo2.png" alt="img2"></li>
+               <li><img src="photo3.png" alt="img3"></li>
+               <li><img src="photo4.png" alt="img4"></li>
+               <li><img src="photo5.png" alt="img5"></li>
+               <li><img src="" alt="img6"></li> 
+            </ul>
+        </div>
+    </div>
+
+    <script type="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="jquery.flipster.min.js"></script>
+
+<script>
+    $('.carousel').flipster({
+        style:'carousel',
+        spacing: -0.3,
+    });
+</script>
+
+</body>
+</html>

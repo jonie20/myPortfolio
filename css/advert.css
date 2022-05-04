@@ -1,0 +1,58 @@
+body{
+	background-color: black;
+}
+.adverts{
+	border: 1px solid white;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 6px;
+}
+
+.adverts h2 {
+	border-radius: 6px;
+	font-size: 36px;
+	font-weight: 500;
+	color: black;
+	border-bottom: 2px solid #fff;
+	background-color: gold;
+	text-align: center;
+	padding-bottom: 0px;
+	margin-bottom: 10px;
+	margin-top: 0px;
+}
+.adverts h2:hover{
+	background-color: darkgoldenrod;
+}
+/*.adverts p {
+	font-size: 13px;
+	color: white;
+	letter-spacing: 0.5px;
+	font-weight: 300;
+	line-height: 24px;
+	margin-bottom: 30px;
+	
+}*/
+.adverts #contact {
+	border-radius: 6px;
+	background-color: gold;
+	font-style: italic;
+    text-align: end;
+	font-size: 20px;
+	color: white;
+	padding: 3px;
+	display: inline-block;
+	/*letter-spacing: 0.5px;
+	line-height: 24px;*/
+	margin-bottom: 0px;
+}
+.adverts #contact:hover{
+	background-color: darkgoldenrod;
+	color: white;
+}
+@media screen and (max-width: 768px){
+	.adverts{
+		justify-content: flex-start;
+		
+	}
+	
+}
